@@ -1,0 +1,56 @@
+void setup() {
+  size(500, 500);
+}
+
+void draw() {
+  if (mousePressed) {
+    background(#77EFF5);
+  } else {
+    background(#000000);
+  }
+  drawHouse();
+  drawSun();
+  drawTree();
+  drawCloud();
+}
+
+void drawHouse() {
+  if (mousePressed) {
+    fill(#F5C6F2);
+  } else {
+    fill(#FFFFFF);
+  }
+  rect(10, 400, 100, 100);
+  if (mousePressed) {
+    fill(#C64045);
+  } else {
+    fill(#FFFFFF);
+  }
+  triangle(10, 400, 60, 350, 110, 400);
+}
+
+void drawSun() {
+  if (mousePressed) 
+    fill(#FFFF00);
+  else {
+    fill(255);}
+  ellipse(439, 61, 100, 100);
+}
+
+void drawTree() {
+  if (mousePressed)
+    fill(#B75A37);
+  rect(154, 401, 40, 100);
+  if (mousePressed)
+    fill(#55B737);
+  ellipse(175, 390, 80, 80);
+}
+
+void drawCloud() {
+  //Draw cloud
+  if (mousePressed){
+  fill(255);
+  ellipse(350,101,75,50);
+  ellipse(450,101,75,50);
+  ellipse(400,101,125,75);}
+}
